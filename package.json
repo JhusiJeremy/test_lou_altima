@@ -1,0 +1,34 @@
+{
+  "name": "test_lou_altima",
+  "version": "1.0.0",
+  "description": "Altima front end test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JhusiJeremy/test_lou_altima.git"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "html",
+    "altima",
+    "test"
+  ],
+  "author": "Weihong Lou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JhusiJeremy/test_lou_altima/issues"
+  },
+  "homepage": "https://github.com/JhusiJeremy/test_lou_altima#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.8", 
+    "gulp": "^3.9.1", 
+    "gulp-minify": "^0.0.15", 
+    "gulp-clean-css": "^3.0.4", 
+    "gulp-plumber": "^1.0.1", 
+    "gulp-sass": "2.1.0"
+  }
+}
