@@ -1,4 +1,12 @@
 
+//Raleway Family
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900');
+$raleway: 'Raleway', sans-serif;
+
+//Open Sans
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$opensans: 'Open Sans', sans-serif;
+
 $dark-green: #7bb801;
 $light-green: #c4e76f;
 
@@ -25,6 +33,34 @@ body {
   padding: 0px;
   margin: 0px;
   position: absolute;
+  font-family: $raleway;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+h3 {
+  margin: 5px;
+}
+
+h {
+  font-weight: 700;
+  font-size: 28px;
+  color: $dark-green;
+  position: relative;
+  width: 45%;
 }
 
 section {
@@ -59,13 +95,15 @@ section {
   -o-background-size: 100%;
   background-size: 100%;
   #contact-number {
+    font-family: $opensans;
     position: relative;
-    top: 20px;
+    top: 5px;
     right: 20px;
     float:right;
-    font-size: 14px;
+    font-size: 10px;
     img {
       margin-bottom: -3px;
+      margin-right: 5px;
       height: 14px;
     }
   }
@@ -75,25 +113,29 @@ section {
     width: 60%;
     top: 13vw;
     margin: 0 auto;
-    h1 {
-
-    }
-    h2 {
-
-    }
     h3 {
+      font-weight: 700;
+      font-size: 20px;
       color: $light-green;
+      sup {
+        font-size:10px;
+      }
+    }
+    p {
+      margin-top: 45px;
     }
   }
 } 
 
 .systema {
-  height: 500px;
-  h3 {
-    color: $dark-green;
-    position: relative;
-    right: 5vw;
+  height: 400px;
+  padding-top: 60px;
+  h {
+    padding-top:20px;
     float: right;
+    sup {
+      font-size: 14px;
+    }
   }
   #video {
     position: relative;
@@ -110,19 +152,36 @@ section {
       -o-background-size: cover;
       background-size: cover;
     }
+    #video-start {
+      position: absolute;
+      left: 45%;
+      top: 40%;
+      width: 40px;
+
+    }
   }
 
   #text-info {
-    width: 47%;
+    padding-top: 10px;
+    width: 46%;
     position: relative;
     float: right;
+    font-size: 12px;
+    line-height: 15px;
     ul {
      list-style:none;
-    }
-    ul img {
-      height: 12px;
-      margin-right: 3px;
-      margin-bottom:-1px;
+     padding-left: 0px;
+     float: left;
+     font-weight: 500;
+     color: $dark-green;
+      li {
+        padding: 10px 0;
+        img {
+          height: 18px;
+          margin-right: 15px;
+          margin-bottom:-5px;
+        }
+      }
     }
   }
 
@@ -133,7 +192,6 @@ section {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-
 }
 
 .banner2 { 
@@ -141,6 +199,12 @@ section {
   height: 560px;
   .partnership {
     text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    h2 {
+      padding-bottom: 60px;
+    }
     .inline-box {
       width:160px;
       height: 250px;
@@ -156,6 +220,7 @@ section {
         padding: 40px 40px 10px 40px;
       }
       h {
+        color: $light-green;
         font-size: 16px;
       }
       p {
@@ -191,8 +256,6 @@ section {
     float: left;
     width: 50%;
     margin-top: 20%;
-    font-size: 28px;
-    color: $dark-green;
   }
   form {
     margin-top: 10%;
@@ -244,20 +307,26 @@ footer {
     .inline-box {
       width: 160px;
       height: 200px;
+      padding-top: 10px;
       img {
         width: 60px;
         padding: 0 20px 10px 20px;
       }
-      h {
-        font-family: 16px;
-      }
       p {
         font-size: 12px;
+      }
+      p:nth-of-type(1) {
+        color: $dark-green;
       }
     }
     #pagination {
       border-top: 1px solid rgba(56, 56, 56, 1);
       height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+      img {
+        padding: 0 20px;
+      }
     }
   }
   #green-bar {
@@ -265,9 +334,9 @@ footer {
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: #c4e76f;
+    background-color: $dark-green;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     line-height: 30px;
   }

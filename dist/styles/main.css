@@ -1,4 +1,16 @@
-body { padding: 0px; margin: 0px; position: absolute; }
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body { padding: 0px; margin: 0px; position: absolute; font-family: "Raleway", sans-serif; }
+
+h1, h2 { padding: 0; margin: 0; }
+
+h1 { font-weight: 400; font-size: 32px; }
+
+h2 { font-weight: 900; font-size: 32px; }
+
+h3 { margin: 5px; }
+
+h { font-weight: 700; font-size: 28px; color: #7bb801; position: relative; width: 45%; }
 
 section { position: relative; }
 
@@ -12,27 +24,37 @@ section { position: relative; }
 
 .banner1 { background: url("../images/banner-bg.png") no-repeat; height: 49vw; -moz-background-size: 100%; -webkit-background-size: 100%; -o-background-size: 100%; background-size: 100%; }
 
-.banner1 #contact-number { position: relative; top: 20px; right: 20px; float: right; font-size: 14px; }
+.banner1 #contact-number { font-family: "Open Sans", sans-serif; position: relative; top: 5px; right: 20px; float: right; font-size: 10px; }
 
-.banner1 #contact-number img { margin-bottom: -3px; height: 14px; }
+.banner1 #contact-number img { margin-bottom: -3px; margin-right: 5px; height: 14px; }
 
 .banner1 #slogan { position: relative; width: 60%; top: 13vw; margin: 0 auto; }
 
-.banner1 #slogan h3 { color: #c4e76f; }
+.banner1 #slogan h3 { font-weight: 700; font-size: 20px; color: #c4e76f; }
 
-.systema { height: 500px; }
+.banner1 #slogan h3 sup { font-size: 10px; }
 
-.systema h3 { color: #7bb801; position: relative; right: 5vw; float: right; }
+.banner1 #slogan p { margin-top: 45px; }
+
+.systema { height: 400px; padding-top: 60px; }
+
+.systema h { padding-top: 20px; float: right; }
+
+.systema h sup { font-size: 14px; }
 
 .systema #video { position: relative; top: 60px; float: left; width: 50%; margin: 0; }
 
 .systema #video video { height: 100%; width: 100%; background: transparent url("../images/video-poster.png") 50% 50% no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-.systema #text-info { width: 47%; position: relative; float: right; }
+.systema #video #video-start { position: absolute; left: 45%; top: 40%; width: 40px; }
 
-.systema #text-info ul { list-style: none; }
+.systema #text-info { padding-top: 10px; width: 46%; position: relative; float: right; font-size: 12px; line-height: 15px; }
 
-.systema #text-info ul img { height: 12px; margin-right: 3px; margin-bottom: -1px; }
+.systema #text-info ul { list-style: none; padding-left: 0px; float: left; font-weight: 500; color: #7bb801; }
+
+.systema #text-info ul li { padding: 10px 0; }
+
+.systema #text-info ul li img { height: 18px; margin-right: 15px; margin-bottom: -5px; }
 
 .inline-box { display: inline-block; text-align: center; vertical-align: top; }
 
@@ -40,11 +62,15 @@ section { position: relative; }
 
 .banner2 .partnership { text-align: center; }
 
+.banner2 .partnership h1 { padding-top: 60px; }
+
+.banner2 .partnership h2 { padding-bottom: 60px; }
+
 .banner2 .partnership .inline-box { width: 160px; height: 250px; background-color: black; opacity: 0.7; margin: 0 2.7% 0 0; -moz-border-radius: 5%; -webkit-border-radius: 5%; -o-border-radius: 5%; border-radius: 5%; }
 
 .banner2 .partnership .inline-box img { width: 60px; padding: 40px 40px 10px 40px; }
 
-.banner2 .partnership .inline-box h { font-size: 16px; }
+.banner2 .partnership .inline-box h { color: #c4e76f; font-size: 16px; }
 
 .banner2 .partnership .inline-box p { font-size: 12px; }
 
@@ -54,7 +80,7 @@ section { position: relative; }
 
 .contact { height: 32vw; }
 
-.contact h { position: relative; float: left; width: 50%; margin-top: 20%; font-size: 28px; color: #7bb801; }
+.contact h { position: relative; float: left; width: 50%; margin-top: 20%; }
 
 .contact form { margin-top: 10%; position: relative; width: 50%; float: right; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; }
 
@@ -70,14 +96,16 @@ footer { position: relative; height: 320px; width: 100%; background-color: #4242
 
 footer .central { color: white; width: 72%; padding-top: 40px; height: 260px; }
 
-footer .central .inline-box { width: 160px; height: 200px; }
+footer .central .inline-box { width: 160px; height: 200px; padding-top: 10px; }
 
 footer .central .inline-box img { width: 60px; padding: 0 20px 10px 20px; }
 
-footer .central .inline-box h { font-family: 16px; }
-
 footer .central .inline-box p { font-size: 12px; }
 
-footer .central #pagination { border-top: 1px solid #383838; height: 40px; }
+footer .central .inline-box p:nth-of-type(1) { color: #7bb801; }
 
-footer #green-bar { position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #c4e76f; color: white; font-size: 14px; text-align: center; line-height: 30px; }
+footer .central #pagination { border-top: 1px solid #383838; height: 40px; line-height: 40px; font-size: 12px; }
+
+footer .central #pagination img { padding: 0 20px; }
+
+footer #green-bar { position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #7bb801; color: white; font-size: 12px; text-align: center; line-height: 30px; }
