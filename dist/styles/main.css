@@ -6,9 +6,13 @@ h1, h2 { padding: 0; margin: 0; }
 
 h1 { font-weight: 400; font-size: 32px; }
 
+@media (max-width: 768px) { h1 { font-size: 24px; } }
+
 h2 { font-weight: 900; font-size: 32px; }
 
-h3 { margin: 5px; }
+@media (max-width: 768px) { h2 { font-size: 24px; } }
+
+h3 { margin: 5px 0; }
 
 h { font-weight: 700; font-size: 28px; color: #7bb801; position: relative; width: 45%; }
 
@@ -20,25 +24,35 @@ section { position: relative; }
 
 @media (max-width: 1024px) { .central { width: 96%; } }
 
-@media (max-width: 768px) { .central { background-color: red; width: 72%; } }
+@media (max-width: 768px) { .central { width: 72%; } }
 
-.banner1 { background: url("../images/banner-bg.png") no-repeat; height: 49vw; -moz-background-size: 100%; -webkit-background-size: 100%; -o-background-size: 100%; background-size: 100%; }
+@media (max-width: 320px) { .central { background-color: yellow; width: 72%; } }
+
+.banner1 { background: url("../images/banner-bg.png") no-repeat; height: 49vw; background-position: 80%; -moz-background-size: auto 100%; -webkit-background-size: auto 100%; -o-background-size: auto 100%; background-size: auto 100%; }
+
+@media (max-width: 768px) { .banner1 { height: 375px; } }
 
 .banner1 #contact-number { font-family: "Open Sans", sans-serif; position: relative; top: 5px; right: 20px; float: right; font-size: 10px; }
 
 .banner1 #contact-number img { margin-bottom: -3px; margin-right: 5px; height: 14px; }
 
-.banner1 #slogan { position: relative; width: 60%; top: 13vw; margin: 0 auto; }
+.banner1 #slogan { position: relative; width: 60%; top: 15vw; margin: 0 auto; }
 
 .banner1 #slogan h3 { font-weight: 700; font-size: 20px; color: #c4e76f; }
 
+@media (max-width: 768px) { .banner1 #slogan h3 { font-size: 16px; } }
+
 .banner1 #slogan h3 sup { font-size: 10px; }
 
-.banner1 #slogan p { margin-top: 45px; }
+.banner1 #slogan p { margin-top: 45px; font-size: 14px; }
+
+@media (max-width: 768px) { .banner1 #slogan p { font-size: 12px; } }
 
 .systema { padding-top: 60px; height: 400px; }
 
 @media (max-width: 1024px) { .systema { height: 450px; } }
+
+@media (max-width: 768px) { .systema { height: 700px; } }
 
 .systema h { padding-top: 20px; float: right; }
 
@@ -46,13 +60,19 @@ section { position: relative; }
 
 @media (max-width: 1024px) { .systema h { width: 40%; position: relative; right: 6vw; } }
 
+@media (max-width: 768px) { .systema h { width: 100%; right: 0; text-align: center; padding-top: 0; } }
+
 .systema #video { position: relative; top: 60px; float: left; width: 50%; margin: 0; }
+
+@media (max-width: 768px) { .systema #video { width: 100%; top: 55px; } }
 
 .systema #video video { height: 100%; width: 100%; background: transparent url("../images/video-poster.png") 50% 50% no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .systema #video #video-start { position: absolute; left: 45%; top: 40%; width: 40px; }
 
 .systema #text-info { padding-top: 10px; width: 46%; position: relative; float: right; font-size: 12px; line-height: 15px; }
+
+@media (max-width: 768px) { .systema #text-info { width: 100%; padding-top: 70px; } }
 
 .systema #text-info ul { list-style: none; padding-left: 0px; float: left; font-weight: 500; color: #7bb801; }
 
@@ -64,17 +84,21 @@ section { position: relative; }
 
 .banner2 { background-color: transparent; height: 560px; }
 
+@media (max-width: 768px) { .banner2 { height: 760px; } }
+
 .banner2 .partnership { text-align: center; }
 
 .banner2 .partnership h1 { padding-top: 60px; }
 
 .banner2 .partnership h2 { padding-bottom: 60px; }
 
-.banner2 .partnership .inline-box { width: 160px; height: 250px; background-color: black; opacity: 0.7; -moz-border-radius: 5%; -webkit-border-radius: 5%; -o-border-radius: 5%; border-radius: 5%; margin: 0 2.6vw; }
+@media (max-width: 768px) { .banner2 .partnership h2 { padding-bottom: 20px; } }
 
-@media (max-width: 1024px) { .banner2 .partnership .inline-box { margin: 0 1.6vw; } }
+.banner2 .partnership .inline-box { width: 160px; height: 250px; background-color: black; opacity: 0.7; -moz-border-radius: 5%; -webkit-border-radius: 5%; -o-border-radius: 5%; border-radius: 5%; margin: 5px 2.6vw; }
 
-@media (max-width: 768px) { .banner2 .partnership .inline-box { margin: 0 6vw; } }
+@media (max-width: 1024px) { .banner2 .partnership .inline-box { margin: 5px 1.6vw; } }
+
+@media (max-width: 768px) { .banner2 .partnership .inline-box { margin: 5px 6.2vw; } }
 
 .banner2 .partnership .inline-box img { width: 60px; padding: 40px 40px 10px 40px; }
 
@@ -84,13 +108,21 @@ section { position: relative; }
 
 .banner2-shadow { position: absolute; top: 0; background: url("../images/partnership-bg.png") no-repeat center; height: 560px; z-index: -1; -moz-background-size: auto 100%; -webkit-background-size: auto 100%; -o-background-size: auto 100%; background-size: auto 100%; }
 
-.banner2-shadow p { font-size: 12px; position: relative; top: 520px; right: 10px; float: right; }
+@media (max-width: 768px) { .banner2-shadow { height: 760px; } }
+
+.banner2-shadow p { font-size: 12px; position: absolute; bottom: 0; right: 0; padding: 10px; line-height: 20px; }
 
 .contact { position: relative; height: 32vw; vertical-align: middle; }
+
+@media (max-width: 768px) { .contact { width: 95%; height: 300px; } }
 
 .contact h { position: absolute; left: 0; top: 45%; }
 
 .contact form { height: 210px; position: absolute; margin: auto; top: 0; bottom: 0; right: 0; width: 50%; }
+
+@media (max-width: 1024px) { .contact form { width: 450px; } }
+
+@media (max-width: 768px) { .contact form { width: 400px; } }
 
 .contact form input, .contact form textarea { width: 100%; font-size: 12px; padding: 10px 20px; }
 

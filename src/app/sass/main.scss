@@ -44,15 +44,21 @@ h1, h2 {
 h1 {
   font-weight: 400;
   font-size: 32px;
+  @include respond-to('medium') {
+    font-size: 24px;
+  }
 }
 
 h2 {
   font-weight: 900;
   font-size: 32px;
+  @include respond-to('medium') {
+    font-size: 24px;
+  }
 }
 
 h3 {
-  margin: 5px;
+  margin: 5px 0;
 }
 
 h {
@@ -81,7 +87,10 @@ section {
     width: 96%;
   }
   @include respond-to('medium') {
-    background-color: red;
+    width: 72%;
+  }
+  @include respond-to('small') {
+    background-color: yellow;
     width: 72%;
   }
 
@@ -90,10 +99,14 @@ section {
 .banner1 { 
   background: url("../images/banner-bg.png") no-repeat; 
   height: 49vw;
-  -moz-background-size: 100%;
-  -webkit-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
+  @include respond-to('medium') {
+    height: 375px;
+  }
+  background-position: 80%;
+  -moz-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
   #contact-number {
     font-family: $opensans;
     position: relative;
@@ -111,11 +124,14 @@ section {
   #slogan {
     position:relative; 
     width: 60%;
-    top: 13vw;
+    top: 15vw;
     margin: 0 auto;
     h3 {
       font-weight: 700;
       font-size: 20px;
+      @include respond-to('medium') {
+        font-size: 16px;
+      }
       color: $light-green;
       sup {
         font-size:10px;
@@ -123,6 +139,10 @@ section {
     }
     p {
       margin-top: 45px;
+      font-size: 14px;
+      @include respond-to('medium') {
+        font-size: 12px;
+      }
     }
   }
 } 
@@ -132,6 +152,9 @@ section {
   height: 400px;
   @include respond-to('large') {
     height: 450px;
+  }
+  @include respond-to('medium') {
+    height: 700px;
   }
   h {
     padding-top:20px;
@@ -144,12 +167,22 @@ section {
       position: relative;
       right: 6vw;
     }
+    @include respond-to('medium') {
+      width: 100%;
+      right: 0;
+      text-align: center;
+      padding-top: 0;
+    }
   }
   #video {
     position: relative;
     top: 60px;
     float: left;
     width: 50%;
+    @include respond-to('medium') {
+      width: 100%;
+      top: 55px;
+    }
     margin: 0;
     video {
       height: 100%;
@@ -172,6 +205,10 @@ section {
   #text-info {
     padding-top: 10px;
     width: 46%;
+    @include respond-to('medium') {
+      width: 100%;
+      padding-top: 70px;
+    }
     position: relative;
     float: right;
     font-size: 12px;
@@ -205,6 +242,9 @@ section {
 .banner2 { 
   background-color: transparent; 
   height: 560px;
+  @include respond-to('medium') {
+    height: 760px;
+  }
   .partnership {
     text-align: center;
     h1 {
@@ -212,6 +252,9 @@ section {
     }
     h2 {
       padding-bottom: 60px;
+      @include respond-to('medium') {
+        padding-bottom: 20px;
+      }
     }
     .inline-box {
       width:160px;
@@ -222,12 +265,12 @@ section {
       -webkit-border-radius: 5%;
       -o-border-radius: 5%;
       border-radius: 5%;
-      margin: 0 2.6vw;
+      margin: 5px 2.6vw;
       @include respond-to('large') {
-        margin: 0 1.6vw;
+        margin: 5px 1.6vw;
       }
       @include respond-to('medium') {
-        margin: 0 6vw;
+        margin: 5px 6.2vw;
       }
       img {
         width: 60px;
@@ -248,6 +291,9 @@ section {
   top: 0;
   background: url("../images/partnership-bg.png") no-repeat center; 
   height: 560px;
+  @include respond-to('medium') {
+    height: 760px;
+  }
   z-index: -1;
   -moz-background-size: auto 100%;
   -webkit-background-size: auto 100%;
@@ -256,14 +302,19 @@ section {
   
   p {
     font-size: 12px;
-    position: relative;
-    top: 520px;
-    right: 10px;
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    line-height: 20px;
   }
 }
 
 .contact {
+  @include respond-to('medium') {
+    width: 95%;
+    height: 300px;
+  }
   position: relative;
   height: 32vw;
   vertical-align: middle;
@@ -279,6 +330,12 @@ section {
     top: 0; bottom: 0;
     right: 0;
     width: 50%;
+    @include respond-to('large') {
+      width: 450px;
+    }
+    @include respond-to('medium') {
+      width: 400px;
+    }
     input, textarea {
       width: 100%;
       font-size: 12px;
