@@ -23,7 +23,7 @@
     "url": "https://github.com/JhusiJeremy/test_lou_altima/issues"
   },
   "homepage": "https://github.com/JhusiJeremy/test_lou_altima#readme",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.6",

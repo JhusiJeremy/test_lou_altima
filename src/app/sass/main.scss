@@ -1,4 +1,7 @@
 
+$dark-green: #7bb801;
+$light-green: #c4e76f;
+
 $breakpoints: (
   'small': (max-width: 320px),
   'medium': (max-width: 768px),
@@ -50,8 +53,11 @@ section {
 
 .banner1 { 
   background: url("../images/banner-bg.png") no-repeat; 
-  background-size: 100%;
   height: 49vw;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
   #contact-number {
     position: relative;
     top: 20px;
@@ -69,19 +75,45 @@ section {
     width: 60%;
     top: 13vw;
     margin: 0 auto;
+    h1 {
+
+    }
+    h2 {
+
+    }
+    h3 {
+      color: $light-green;
+    }
   }
 } 
 
 .systema {
   height: 500px;
   h3 {
+    color: $dark-green;
     position: relative;
     right: 5vw;
     float: right;
   }
+  #video {
+    position: relative;
+    top: 60px;
+    float: left;
+    width: 50%;
+    margin: 0;
+    video {
+      height: 100%;
+      width: 100%;
+      background: transparent url('../images/video-poster.png') 50% 50% no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  }
 
   #text-info {
-    width: 45%;
+    width: 47%;
     position: relative;
     float: right;
     ul {
@@ -94,15 +126,7 @@ section {
     }
   }
 
-  #video {
-    position: relative;
-    top: 60px;
-    float: left;
-    width: 47%;
-    height: 300px;
-    margin: 0;
-    background-color: blue;
-  }
+  
 }
 
 .inline-box {
@@ -122,8 +146,11 @@ section {
       height: 250px;
       background-color: black;
       opacity: 0.7;
-      border-radius: 5%;
       margin: 0 2.7% 0 0;
+      -moz-border-radius: 5%;
+      -webkit-border-radius: 5%;
+      -o-border-radius: 5%;
+      border-radius: 5%;
       img {
         width: 60px;
         padding: 40px 40px 10px 40px;
@@ -142,8 +169,12 @@ section {
   top: 0;
   background: url("../images/partnership-bg.png") no-repeat center; 
   height: 560px;
-  background-size: auto 100%;
   z-index: -1;
+  -moz-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  
   p {
     font-size: 12px;
     position: relative;
@@ -155,6 +186,48 @@ section {
 
 .contact {
   height: 32vw;
+  h {
+    position:relative;
+    float: left;
+    width: 50%;
+    margin-top: 20%;
+    font-size: 28px;
+    color: $dark-green;
+  }
+  form {
+    margin-top: 10%;
+    position: relative;
+    width: 50%;
+    float: right;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+    input, textarea {
+      width: 100%;
+      font-size: 12px;
+      padding: 10px 20px;
+
+    }
+    #email{
+      height: 40px;
+      border: 1px solid;
+    }
+    textarea {
+      width: 90%;
+      height: 100px;
+      border-style: none;
+    }
+    #submit {
+      height: 45px;
+      box-shadow: none;
+      color: white;
+      font-size: 16px;
+      background-color: $dark-green;
+      border: 1px solid white;
+    }
+    
+  }
 }
 
 footer {
