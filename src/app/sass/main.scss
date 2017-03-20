@@ -128,13 +128,21 @@ section {
 } 
 
 .systema {
-  height: 400px;
   padding-top: 60px;
+  height: 400px;
+  @include respond-to('large') {
+    height: 450px;
+  }
   h {
     padding-top:20px;
     float: right;
     sup {
       font-size: 14px;
+    }
+    @include respond-to('large') {
+      width: 40%;
+      position: relative;
+      right: 6vw;
     }
   }
   #video {
@@ -210,11 +218,17 @@ section {
       height: 250px;
       background-color: black;
       opacity: 0.7;
-      margin: 0 2.7% 0 0;
       -moz-border-radius: 5%;
       -webkit-border-radius: 5%;
       -o-border-radius: 5%;
       border-radius: 5%;
+      margin: 0 2.6vw;
+      @include respond-to('large') {
+        margin: 0 1.6vw;
+      }
+      @include respond-to('medium') {
+        margin: 0 6vw;
+      }
       img {
         width: 60px;
         padding: 40px 40px 10px 40px;
@@ -250,22 +264,21 @@ section {
 }
 
 .contact {
+  position: relative;
   height: 32vw;
+  vertical-align: middle;
   h {
-    position:relative;
-    float: left;
-    width: 50%;
-    margin-top: 20%;
+    position:absolute;
+    left: 0;
+    top: 45%;
   }
   form {
-    margin-top: 10%;
-    position: relative;
+    height: 210px;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+    right: 0;
     width: 50%;
-    float: right;
-    -webkit-appearance: none;
-    -moz-appearance:none;
-    -o-appearance:none;
-    appearance:none;
     input, textarea {
       width: 100%;
       font-size: 12px;
@@ -295,40 +308,36 @@ section {
 
 footer {
   position: relative;
-  height: 320px;
+  height: 310px;
   width: 100%;
   background-color: rgba(66,66,67,1);
   text-align: center;
-  .central {
-    color: white;
-    width: 72%;
+  color: white;
+  .inline-box {
+    width: 160px;
+    height: 200px;
     padding-top: 40px;
-    height: 260px;
-    .inline-box {
-      width: 160px;
-      height: 200px;
-      padding-top: 10px;
-      img {
-        width: 60px;
-        padding: 0 20px 10px 20px;
-      }
-      p {
-        font-size: 12px;
-      }
-      p:nth-of-type(1) {
-        color: $dark-green;
-      }
+    img {
+      width: 60px;
+      padding: 0 20px 10px 20px;
     }
-    #pagination {
-      border-top: 1px solid rgba(56, 56, 56, 1);
-      height: 40px;
-      line-height: 40px;
+    p {
       font-size: 12px;
-      img {
-        padding: 0 20px;
-      }
+    }
+    p:nth-of-type(1) {
+      color: $dark-green;
     }
   }
+  #pagination {
+    border-top: 1px solid rgba(56, 56, 56, 1);
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    img {
+      padding: 0 20px;
+    }
+  }
+  
   #green-bar {
     position: absolute;
     bottom: 0;
