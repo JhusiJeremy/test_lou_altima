@@ -1,1 +1,1 @@
-$("#video-start").click(function(){$("#movie").get(0).play(),$("#video-start").css("visibility","hidden")});
+$("#video-start").click(function(){$("#movie").get(0).play(),$("#video-start").css("visibility","hidden")}),$(document).ready(function(){$("#video").css("height",295.25*$("#video").width()/525.3)});

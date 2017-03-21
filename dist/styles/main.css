@@ -76,7 +76,7 @@ section { position: relative; }
 
 @media (max-width: 463px) { .systema h { font-size: 20px; } }
 
-.systema #video { position: relative; top: 60px; float: left; width: 50%; margin: 0; }
+.systema #video { position: relative; top: 40px; float: left; width: 50%; height: auto; margin: 0; }
 
 @media (max-width: 768px) { .systema #video { width: 100%; top: 55px; } }
 

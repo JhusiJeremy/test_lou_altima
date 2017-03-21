@@ -201,9 +201,10 @@ section {
   }
   #video {
     position: relative;
-    top: 60px;
+    top: 40px;
     float: left;
     width: 50%;
+    height: auto;
     @include respond-to('medium') {
       width: 100%;
       top: 55px;
