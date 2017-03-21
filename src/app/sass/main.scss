@@ -38,9 +38,13 @@ body {
   font-family: $raleway;
 }
 
+p {
+  font-family: $raleway;
+}
+
 h1, h2 {
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
 }
 
 h1 {
@@ -276,7 +280,7 @@ section {
     height: 1350px;
   }
   @include respond-to('xxsmall') {
-    height: 1500px;
+    height: 1550px;
   }
   .partnership {
     text-align: center;
@@ -314,10 +318,8 @@ section {
         margin: 10px 0;
       }
       img {
-        width: 60px;
-        padding: 40px 40px 10px 40px;
+        padding: 40px 20px 10px 20px;
         @include respond-to('xxsmall') {
-          width: 80px;
           padding: 35px 90px;
         }
       }
@@ -374,7 +376,6 @@ section {
       position: absolute;
       top: 0;
       left: 0;
-
     }
   }
 }
@@ -397,6 +398,7 @@ section {
     @include respond-to('xsmall') {
       left: 30%;
       top: 5%;
+      width: auto;
       margin: 0 auto;
       font-size: 20px;
     }
@@ -431,7 +433,6 @@ section {
       border: 1px solid;
     }
     textarea {
-      width: 90%;
       height: 100px;
       border-style: none;
     }
@@ -470,26 +471,33 @@ footer {
       width: 160px;
       height: 200px;
       img {
-        width: 60px;
+        width: 130px;
         padding: 0 20px 10px 20px;
       }
       p {
         font-size: 12px;
+        font-weight: 300;
       }
       p:nth-of-type(1) {
         color: $dark-green;
+        font-weight: 400;
       }
     }
     #pagination {
+      position: relative;
       border-top: 1px solid rgba(56, 56, 56, 1);
       height: 40px;
       width: 60vw;
       margin: 0 auto;
       line-height: 40px;
       font-size: 12px;
-      img {
-        padding: 0 20px;
+      a {
+        position: inline-block;
+        background: none;
+        height: 40px;
+        width: 0;
       }
+      
     }
   }
   #green-bar {

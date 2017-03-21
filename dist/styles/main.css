@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 body { padding: 0px; margin: 0px; position: absolute; font-family: "Raleway", sans-serif; }
 
-h1, h2 { padding: 0; margin: 0; }
+p { font-family: "Raleway", sans-serif; }
+
+h1, h2 { padding: 0; margin: 0 !important; }
 
 h1 { font-weight: 400; font-size: 32px; }
 
@@ -104,7 +106,7 @@ section { position: relative; }
 
 @media (max-width: 463px) { .banner2 { height: 1350px; } }
 
-@media (max-width: 320px) { .banner2 { height: 1500px; } }
+@media (max-width: 320px) { .banner2 { height: 1550px; } }
 
 .banner2 .partnership { text-align: center; }
 
@@ -124,9 +126,9 @@ section { position: relative; }
 
 @media (max-width: 320px) { .banner2 .partnership .inline-box { height: 300px; width: 92%; margin: 10px 0; } }
 
-.banner2 .partnership .inline-box img { width: 60px; padding: 40px 40px 10px 40px; }
+.banner2 .partnership .inline-box img { padding: 40px 20px 10px 20px; }
 
-@media (max-width: 320px) { .banner2 .partnership .inline-box img { width: 80px; padding: 35px 90px; } }
+@media (max-width: 320px) { .banner2 .partnership .inline-box img { padding: 35px 90px; } }
 
 .banner2 .partnership .inline-box h { color: #c4e76f; font-size: 16px; }
 
@@ -156,7 +158,7 @@ section { position: relative; }
 
 .contact h { position: absolute; left: 0; top: 45%; }
 
-@media (max-width: 463px) { .contact h { left: 30%; top: 5%; margin: 0 auto; font-size: 20px; } }
+@media (max-width: 463px) { .contact h { left: 30%; top: 5%; width: auto; margin: 0 auto; font-size: 20px; } }
 
 .contact form { height: 210px; position: absolute; margin: auto; top: 0; bottom: 0; right: 0; width: 50%; }
 
@@ -170,7 +172,7 @@ section { position: relative; }
 
 .contact form #email { height: 40px; border: 1px solid; }
 
-.contact form textarea { width: 90%; height: 100px; border-style: none; }
+.contact form textarea { height: 100px; border-style: none; }
 
 .contact form #submit { height: 45px; box-shadow: none; color: white; font-size: 16px; background-color: #7bb801; border: 1px solid white; }
 
@@ -186,14 +188,14 @@ footer #footer-carousel { padding-top: 40px; margin: 0 auto; }
 
 footer #footer-carousel .inline-box { width: 160px; height: 200px; }
 
-footer #footer-carousel .inline-box img { width: 60px; padding: 0 20px 10px 20px; }
+footer #footer-carousel .inline-box img { width: 130px; padding: 0 20px 10px 20px; }
 
-footer #footer-carousel .inline-box p { font-size: 12px; }
+footer #footer-carousel .inline-box p { font-size: 12px; font-weight: 300; }
 
-footer #footer-carousel .inline-box p:nth-of-type(1) { color: #7bb801; }
+footer #footer-carousel .inline-box p:nth-of-type(1) { color: #7bb801; font-weight: 400; }
 
-footer #footer-carousel #pagination { border-top: 1px solid #383838; height: 40px; width: 60vw; margin: 0 auto; line-height: 40px; font-size: 12px; }
+footer #footer-carousel #pagination { position: relative; border-top: 1px solid #383838; height: 40px; width: 60vw; margin: 0 auto; line-height: 40px; font-size: 12px; }
 
-footer #footer-carousel #pagination img { padding: 0 20px; }
+footer #footer-carousel #pagination a { position: inline-block; background: none; height: 40px; width: 0; }
 
 footer #green-bar { position: absolute; bottom: 0; width: 100%; height: 30px; background-color: #7bb801; color: white; font-size: 12px; text-align: center; line-height: 30px; }
